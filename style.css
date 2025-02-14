@@ -1,0 +1,139 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styling */
+header {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    max-width: 100px;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header ul li img {
+    max-width: 30px;
+}
+
+header button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+header button:hover {
+    background-color: #45a049;
+}
+
+/* Form Section */
+.form {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.form img {
+    max-width: 80px;
+    margin-bottom: 20px;
+}
+
+.form h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.form a:hover {
+    text-decoration: underline;
+}
+
+.form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #45a049;
+}
+
+.form p.errorP {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Logout Button */
+.logoutBtn {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 20px;
+    border: none;
+    background-color: #f44336;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.logoutBtn:hover {
+    background-color: #e53935;
+}
