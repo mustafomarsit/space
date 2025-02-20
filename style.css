@@ -1,139 +1,173 @@
-/* Global Reset */
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-/* Body Styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-color: #f4f4f4;
     color: #333;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
 }
 
-/* Container */
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Header Styling */
+/* Header */
 header {
-    background-color: #fff;
+    background: #fff;
     padding: 15px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
-header img {
-    max-width: 100px;
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header ul {
-    list-style-type: none;
+    list-style: none;
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
 }
 
 header ul li {
-    margin-left: 20px;
+    margin-left: 15px;
 }
 
-header ul li img {
-    max-width: 30px;
-}
-
-header button {
-    padding: 8px 15px;
+button {
+    padding: 10px 20px;
     border: none;
-    background-color: #4CAF50;
-    color: white;
-    border-radius: 4px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 
-header button:hover {
-    background-color: #45a049;
+button:hover {
+    opacity: 0.8;
 }
 
 /* Form Section */
 .form {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #fff;
+}
+
+.form .container {
+    max-width: 400px;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
     text-align: center;
-}
-
-.form img {
-    max-width: 80px;
-    margin-bottom: 20px;
-}
-
-.form h1 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.form a {
-    color: #4CAF50;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.form a:hover {
-    text-decoration: underline;
 }
 
 .form input {
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
     font-size: 16px;
-    box-sizing: border-box;
 }
 
-.form button {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    background-color: #4CAF50;
-    color: white;
-    font-size: 16px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.form button:hover {
-    background-color: #45a049;
-}
-
-.form p.errorP {
+.errorP {
     color: red;
     font-size: 14px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.loginBtn {
+    background: #28a745;
+    color: #fff;
+    width: 100%;
     margin-top: 10px;
 }
 
-/* Logout Button */
-.logoutBtn {
-    display: block;
-    margin: 20px auto;
-    padding: 12px 20px;
-    border: none;
-    background-color: #f44336;
-    color: white;
-    font-size: 16px;
-    border-radius: 4px;
-    cursor: pointer;
+.darkBtn {
+    background: #333;
+    color: #fff;
+    width: 100%;
+    margin-top: 10px;
 }
 
-.logoutBtn:hover {
-    background-color: #e53935;
+.logoutBtn {
+    background: #dc3545;
+    color: #fff;
+    width: 35%;
+    margin-top: 10px;
+    margin-left: 490px;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background: #1e1e1e;
+    color: #ffffff;
+}
+
+.dark-mode .form {
+    background: #2c2c2c;
+    color: #ffffff;
+}
+
+.dark-mode header {
+    background: #222;
+}
+
+.dark-mode button {
+    background: #444;
+    color: #fff;
+}
+
+.dark-mode .loginBtn {
+    background: #007bff;
+}
+
+.dark-mode .logoutBtn {
+    background: #131212;
+}
+
+.dark-mode .form input {
+    background: #333;
+    color: #fff;
+    border: 1px solid #777;
+}
+
+.dark-mode .form input::placeholder {
+    color: #bbb;
+}
+
+.dark-mode h1 {
+    color: #ffffff;
+    background-color: black;
+}
+
+h2 {
+    text-align: center;
+    color: #222;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
 }
